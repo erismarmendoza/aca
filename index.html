@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QualiLearn | Calidad del Software</title>
+  <style>
+    :root {
+      --main:#49bd58;
+      --light:#f5f8ff;
+      --dark:#222;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--dark);
+      background: var(--light);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--main);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      background: #fff;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: var(--main);
+      border-bottom: 2px solid var(--main);
+      padding-bottom: 6px;
+    }
+    .banner {
+      background: linear-gradient(135deg, var(--main), #df68c5);
+      color: #fff;
+      border-radius: 12px;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .madurez {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .madurez th, .madurez td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    input[type=range]{width:100%}
+    button{
+      background:var(--main);
+      color:#fff;
+      border:none;
+      padding:10px 16px;
+      border-radius:8px;
+      cursor:pointer;
+      margin-top:8px;
+    }
+    .result{font-weight:700;margin-top:10px}
+    footer {
+      background: var(--main);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>QualiLearn — Calidad del Software</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#normas">Normas</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#estandares">Estándares</a>
+    <a href="#evaluacion">Evaluación</a>
+    <a href="#conclusiones">Conclusiones</a>
+  </nav>
+</header>
+
+<!-- a. Página de Inicio -->
+<section id="inicio">
+  <h2>¿Qué es la Calidad del Software?</h2>
+  <p>La calidad del software se refiere al grado en que un sistema cumple con los requisitos funcionales y no funcionales, garantizando que sea confiable, eficiente y satisfaga las expectativas del usuario.</p>
+  <p>En proyectos educativos y empresariales, mantener la calidad del software es clave para lograr resultados sostenibles, reducir errores y asegurar productos confiables que mejoren la experiencia de los usuarios.</p>
+  <div class="banner">“La calidad no se prueba al final, se construye desde el inicio.”</div>
+</section>
+
+<!-- b. Normas -->
+<section id="normas">
+  <h2>Normas de Calidad</h2>
+  <ul>
+    <li><b>ISO 9001:</b> Define sistemas de gestión de calidad aplicables a cualquier organización, promoviendo procesos eficientes y trazables.</li>
+    <li><b>ISO/IEC 25000 (SQuaRE):</b> Establece modelos, métricas y requisitos para evaluar la calidad del software a nivel internacional.</li>
+    <li><b>IEEE 730:</b> Describe el contenido y estructura de los planes de aseguramiento de la calidad del software.</li>
+  </ul>
+  <p><b>Ejemplo de aplicación:</b> En el desarrollo de una plataforma educativa, estas normas permiten definir políticas de calidad, establecer métricas de rendimiento y asegurar la satisfacción de docentes y estudiantes.</p>
+</section>
+
+<!-- c. Modelos -->
+<section id="modelos">
+  <h2>Modelos de Calidad</h2>
+  <p><b>CMMI (Capability Maturity Model Integration):</b> Propone niveles de madurez para mejorar continuamente los procesos de desarrollo de software.</p>
+  <p><b>SPICE (ISO/IEC 15504):</b> Se enfoca en la evaluación y mejora de procesos de software mediante una estructura de capacidades.</p>
+  <p>A continuación, se muestra un gráfico representado en tabla con los niveles de madurez:</p>
+  <table class="madurez">
+    <tr><th>Nivel</th><th>Descripción</th></tr>
+    <tr><td>1</td><td>Inicial – Procesos impredecibles y reactivos</td></tr>
+    <tr><td>2</td><td>Gestionado – Procesos planificados y ejecutados</td></tr>
+    <tr><td>3</td><td>Definido – Procesos documentados y estandarizados</td></tr>
+    <tr><td>4</td><td>Cuantitativamente gestionado – Uso de métricas y control</td></tr>
+    <tr><td>5</td><td>Optimizado – Mejora continua e innovación</td></tr>
+  </table>
+</section>
+
+<!-- d. Estándares -->
+<section id="estandares">
+  <h2>Estándares de Calidad</h2>
+  <p><b>Comparación:</b></p>
+  <ul>
+    <li><b>ISO:</b> Se centra en la gestión organizacional y la evaluación de calidad global del producto.</li>
+    <li><b>IEEE:</b> Detalla procedimientos técnicos y metodológicos en la ingeniería de software.</li>
+  </ul>
+  <p><b>Ejemplo educativo:</b> En un sistema de gestión académica, los estándares ISO garantizan la satisfacción del usuario final (estudiantes y docentes), mientras que los IEEE guían el diseño técnico y las pruebas del sistema.</p>
+</section>
+
+<!-- e. Código y Programación + f. Pruebas y Evaluación -->
+<section id="evaluacion">
+  <h2>Evaluación de Calidad del Software</h2>
+  <p>Evalúe un software educativo según los criterios de calidad. Los resultados se guardan temporalmente en su navegador.</p>
+  <form id="evalForm" onsubmit="return false;">
+    <label>Funcionalidad (25%) <span id="fVal">3</span></label>
+    <input type="range" id="func" min="0" max="5" step="0.1" value="3">
+    <label>Usabilidad (20%) <span id="uVal">3</span></label>
+    <input type="range" id="usab" min="0" max="5" step="0.1" value="3">
+    <label>Rendimiento (20%) <span id="rVal">3</span></label>
+    <input type="range" id="rend" min="0" max="5" step="0.1" value="3">
+    <label>Seguridad (15%) <span id="sVal">3</span></label>
+    <input type="range" id="seg" min="0" max="5" step="0.1" value="3">
+    <label>Mantenibilidad (10%) <span id="mVal">3</span></label>
+    <input type="range" id="mant" min="0" max="5" step="0.1" value="3">
+    <label>Portabilidad (10%) <span id="pVal">3</span></label>
+    <input type="range" id="port" min="0" max="5" step="0.1" value="3">
+
+    <button id="calc">Calcular Nota</button>
+    <button id="clear" type="button">Borrar datos</button>
+    <div class="result" id="res">Nota final: —</div>
+  </form>
+</section>
+
+<!-- g. Conclusiones -->
+<section id="conclusiones">
+  <h2>Conclusiones</h2>
+  <p>La gestión de calidad del software es un pilar esencial para el éxito de los proyectos educativos y empresariales. Implementar normas, modelos y estándares permite reducir fallos, optimizar recursos y ofrecer soluciones sostenibles y seguras.</p>
+  <p>Integrar las buenas prácticas desde las primeras etapas del desarrollo garantiza productos confiables, mejora la experiencia del usuario y fortalece la reputación institucional.</p>
+</section>
+
+<footer>
+  © 2025 QualiLearn – Proyecto académico sobre Calidad del Software.
+</footer>
+
+<script>
+const sliders = ['func','usab','rend','seg','mant','port'];
+const weights = {func:0.25,usab:0.20,rend:0.20,seg:0.15,mant:0.10,port:0.10};
+function updateLabels(){
+  sliders.forEach(id=>{
+    document.getElementById(id[0]+'Val').textContent = parseFloat(document.getElementById(id).value).toFixed(1);
+  });
+}
+sliders.forEach(id=>document.getElementById(id).addEventListener('input', updateLabels));
+
+document.getElementById('calc').addEventListener('click', ()=>{
+  let total=0;
+  let vals={};
+  sliders.forEach(id=>{
+    const val=parseFloat(document.getElementById(id).value);
+    vals[id]=val;
+    total+=val*(weights[id]||0);
+  });
+  total=Math.round(total*100)/100;
+  document.getElementById('res').textContent=`Nota final: ${total} / 5`;
+  localStorage.setItem('ultimaEvaluacion',JSON.stringify({vals,total,fecha:new Date().toLocaleString()}));
+});
+
+document.getElementById('clear').addEventListener('click',()=>{
+  localStorage.removeItem('ultimaEvaluacion');
+  sliders.forEach(id=>document.getElementById(id).value=3);
+  updateLabels();
+  document.getElementById('res').textContent='Nota final: —';
+});
+
+window.addEventListener('load',()=>{
+  updateLabels();
+  const saved=localStorage.getItem('ultimaEvaluacion');
+  if(saved){
+    const data=JSON.parse(saved);
+    document.getElementById('res').textContent=`Última nota guardada: ${data.total} / 5 (${data.fecha})`;
+  }
+});
+</script>
+</body>
+</html>
